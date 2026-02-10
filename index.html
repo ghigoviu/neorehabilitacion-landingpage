@@ -17,6 +17,7 @@
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <!-- style css -->
    <link rel="stylesheet" href="css/style.css">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <!-- Responsive-->
    <link rel="stylesheet" href="css/responsive.css">
    <!-- fevicon -->
@@ -42,15 +43,17 @@
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                <li class="nav-item">
-                  <a class="nav-link" href="medicine.html">Especialidades</a>
+                  <a class="nav-link" href="#">Especialidades</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="client.html">Nosotros</a>
+                  <a class="nav-link" href="#">Nosotros</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contacto</a>
+                  <a class="nav-link" href="#">Contacto</a>
                </li>
             </ul>
+
+            
          </div>
       </nav>
       <!-- header section end -->
@@ -160,21 +163,27 @@
          <div class="knowledge_section_2">
             <div class="row">
                <div class="col-lg-4 col-sm-6">
-                  <div class="box_main">
-                     <h4 class="daily_text">Fisioterapia Deportiva</h4>
-                     <p class="health_text" style="color: aliceblue;">Recuperación de lesiones por actividad física y mejora del rendimiento.</p>
+                  <div data-aos="flip-left">
+                     <div class="box_main">
+                        <h4 class="daily_text">Fisioterapia Deportiva</h4>
+                        <p class="health_text" style="color: aliceblue;">Recuperación de lesiones por actividad física y mejora del rendimiento.</p>
+                     </div>
                   </div>
                </div>
                <div class="col-lg-4">
-                  <div class="box_main">
-                     <h4 class="daily_text">Ortopedia y Postquirúrgico</h4>
-                     <p class="health_text" style="color: aliceblue;">Rehabilitación tras fracturas, cirugías y manejo de dolor de columna.</p>
+                  <div data-aos="flip-up">
+                     <div class="box_main">
+                        <h4 class="daily_text">Ortopedia y Postquirúrgico</h4>
+                        <p class="health_text" style="color: aliceblue;">Rehabilitación tras fracturas, cirugías y manejo de dolor de columna.</p>
+                     </div>
                   </div>
                </div>
                <div class="col-lg-4 col-sm-6">
-                  <div class="box_main">
-                     <h4 class="daily_text">Tratamientos para el dolor muscular</h4>
-                     <p class="health_text" style="color: aliceblue;">Alivio efectivo para dolor de espalda, rodilla, hombro y más.</p>
+                  <div data-aos="flip-right">
+                     <div class="box_main">
+                        <h4 class="daily_text">Tratamientos para el dolor muscular</h4>
+                        <p class="health_text" style="color: aliceblue;">Alivio efectivo para dolor de espalda, rodilla, hombro y más.</p>
+                     </div>
                   </div>
                </div>
             </div>
@@ -190,7 +199,7 @@
          <div class="news_section_2 ">
             <div class="client_section_2">
                <div class="client_left">
-                  <div><img src="images/Servicios1.jpeg" class="client_img"></div>
+                     <div data-aos="fade-right" data-aos-duration="3000"><img src="images/Servicios1.jpeg" class="client_img"></div>
                </div>
                <div class="client_right">
                   <h3 class="distracted_text">Tratamiento de la Causa, no solo del Síntoma</h3>
@@ -223,14 +232,14 @@
                   <div class="quote_icon"><img src="images/quote-icon.png"></div>
                </div>
                <div class="client_left">
-                  <div><img src="images/image_3.png" class="client_img"></div>
+                  <div data-aos="fade-left" data-aos-duration="3000"><img src="images/image_3.png" class="client_img"></div>
                </div>
             </div>
          </div>
           <div class="news_section_2">
             <div class="client_section_2">
                <div class="client_left">
-                  <div><img src="images/Servicios3.jpeg" class="client_img"></div>
+                  <div data-aos="fade-right" data-aos-duration="3000"><img src="images/Servicios3.jpeg" class="client_img"></div>
                </div>
                <div class="client_right">
                   <h3 class="distracted_text">Enfoque 100% Personalizado y Científico</h3>
@@ -377,7 +386,10 @@
    </div>
    <!-- copyright section end -->
    <!-- Javascript files-->
-
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+      AOS.init();
+   </script>
    <script src="js/jquery.min.js"></script>
    <script src="js/popper.min.js"></script>
    <script src="js/bootstrap.bundle.min.js"></script>
