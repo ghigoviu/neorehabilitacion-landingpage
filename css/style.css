@@ -421,11 +421,6 @@ button {
     display: none;
 }
 
-.main:hover::after {
-    background-color: rgba(27, 236, 222, 0.5);
-    display: block;
-}
-
 .image {
     opacity: 1;
     display: block;
@@ -446,13 +441,6 @@ button {
     text-align: center;
 }
 
-.image_main:hover .image {
-    background-color: rgba(27, 236, 222, 0.5);
-}
-
-.image_main:hover .middle {
-    opacity: 1;
-}
 
 .text {
     background-color: #252525;
@@ -532,7 +520,7 @@ button {
 .knowledge_text {
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-size: 18px;
     color: #ffffff;
     margin: 0px;
 }
@@ -554,6 +542,42 @@ button {
     transform: translate(-50%, -50%);
     background-color: #ffffff;
     border-radius: 100%;
+    z-index: -1;
+    animation: fadeEffect 1.3s infinite ease;
+    box-shadow: 0px 0px 10px 0px;
+}
+
+.cat {
+    width: 170px;
+    float: left;
+}
+
+.cat a {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: #f6f8f8;
+    background-color: #4bc5b8;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 20px;
+}
+
+.cat a:hover {
+    color: #15e4d0;
+    background-color: aliceblue;
+}
+
+.cat1::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border-radius: 10%;
     z-index: -1;
     animation: fadeEffect 1.3s infinite ease;
     box-shadow: 0px 0px 10px 0px;
@@ -1123,4 +1147,56 @@ input.Enter_text::placeholder {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Color Cian de NEO Rehabilitación */
+.bg-cyan {
+    background-color: #00bcd4 !important;
+}
+
+/* Estilo de la lista */
+.list-group-item-custom {
+    border-left: 5px solid #7fffd4; /* Acento Aquamarina */
+    font-family: 'Segoe UI', Roboto, sans-serif; /* Tipografía limpia estilo Bootstrap */
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.list-group-item-custom:hover {
+    background-color: #f8fdff;
+    transform: translateX(10px);
+}
+
+/* Colores de marca por si no están definidos globalmente en esta hoja */
+.bg-cyan { background-color: #00bcd4 !important; }
+.text-cyan { color: #00bcd4 !important; }
+.bg-aquamarine { background-color: #7fffd4 !important; }
+.border-aquamarine { border: 2px solid #7fffd4 !important; }
+
+/* Tarjetas de Servicios */
+.service-card {
+    border-radius: 10px;
+    border-left: 5px solid #00bcd4 !important; /* Detalle de color en el borde izquierdo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 188, 212, 0.15) !important;
+}
+
+/* Tarjetas de Precios */
+.price-card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.price-card:hover {
+    transform: scale(1.03);
+}
+
+.price-card .card-header {
+    border-bottom: none;
 }
