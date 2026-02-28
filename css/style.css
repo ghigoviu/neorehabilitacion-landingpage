@@ -226,7 +226,7 @@ button {
 }
 
 .logo {
-    width: 42%;
+    width: 70%;
     float: left;
 }
 
@@ -271,6 +271,16 @@ button {
     font-weight: bold;
     line-height: 60px;
     padding-top: 120px;
+}
+
+.banner_taital_especialidades {
+    width: 100%;
+    float: left;
+    font-size: 60px;
+    color: #15e4d0;
+    font-weight: bold;
+    line-height: 60px;
+    padding-top: 50px;
 }
 
 .banner_text {
@@ -1156,7 +1166,7 @@ input.Enter_text::placeholder {
 
 /* Estilo de la lista */
 .list-group-item-custom {
-    border-left: 5px solid #7fffd4; /* Acento Aquamarina */
+    
     font-family: 'Segoe UI', Roboto, sans-serif; /* Tipografía limpia estilo Bootstrap */
     font-size: 1.1rem;
     padding: 1rem 1.5rem;
@@ -1169,9 +1179,9 @@ input.Enter_text::placeholder {
 }
 
 /* Colores de marca por si no están definidos globalmente en esta hoja */
-.bg-cyan { background-color: #00bcd4 !important; }
+.bg-cyan { background-color: #15E4D0 !important; }
 .text-cyan { color: #00bcd4 !important; }
-.bg-aquamarine { background-color: #7fffd4 !important; }
+.bg-aquamarine { background-color: #15E4D0 !important; }
 .border-aquamarine { border: 2px solid #7fffd4 !important; }
 
 /* Tarjetas de Servicios */
@@ -1200,3 +1210,113 @@ input.Enter_text::placeholder {
 .price-card .card-header {
     border-bottom: none;
 }
+
+.logo-link {
+    display: flex;          /* Activa el modo horizontal */
+    align-items: center;    /* Centra verticalmente ambos elementos */
+    gap: 15px;              /* Crea la separación exacta de 10px */
+    text-decoration: none;  /* Quita subrayados del enlace */
+    flex-wrap: nowrap;      /* EVITA que los elementos se encimen o se separen en móvil */
+    width: fit-content;     /* El contenedor solo ocupa el ancho de las imágenes */
+}
+
+/* Control de tamaños para asegurar el responsivo */
+.logo-img-figure {
+    width: 100px;
+    height: auto;
+    flex-shrink: 0;         /* Evita que la imagen se haga pequeña en pantallas chicas */
+}
+
+.logo-img-text {
+    width: 200px;
+    height: auto;
+    flex-shrink: 0;         /* Mantiene el ancho de 200px siempre unido al icono */
+}
+
+/* Ajuste opcional para móviles muy pequeños (evita que el logo se corte) */
+@media (max-width: 400px) {
+    .logo-img-figure { width: 70px; }
+    .logo-img-text { width: 140px; }
+    .logo-link { gap: 8px; }
+}
+
+/* Paleta de colores NEOrehabilitación */
+.text-cyan {
+    color: #00bcd4 !important;
+}
+
+.bg-cyan-light {
+    background-color: #d0eef0;
+    color: #007c8d;
+}
+
+/* Ajustes de Tarjetas */
+.custom-card {
+    transition: all 0.3s ease-in-out;
+    border-radius: 20px;
+    background: #ffffff;
+}
+
+.custom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 188, 212, 0.2) !important;
+    background: linear-gradient(to bottom right, #ffffff, #f0fdfd);
+}
+
+.icon-box {
+    font-size: 3rem; /* Icono grande */
+    display: inline-block;
+    padding: 10px;
+}
+
+/* Tipografía Responsiva */
+h3.card-title {
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .display-4 { font-size: 2.5rem; }
+    .fs-5 { font-size: 1.1rem !important; } /* Un poco más grande de lo normal en móvil */
+}
+
+/* Clase personalizada para evitar conflictos con Bootstrap */
+.price-card-custom {
+    border-radius: 15px !important;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efecto de elevación suave */
+.hvr-lift:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 30px rgba(0, 188, 212, 0.25) !important;
+}
+
+/* Resalte para el paquete de 10 sesiones */
+.featured-card {
+    background: linear-gradient(180deg, #ffffff 0%, #f0fdfa 100%);
+    border: 2px solid #7fffd4 !important;
+}
+
+/* Tamaño de letra para los precios */
+.card-title {
+    font-size: 2.2rem;
+    letter-spacing: -1px;
+}
+
+.card-body hr {
+    border-top: 1px solid #eee;
+    margin: 1.5rem 0;
+}
+
+/* Colores de marca */
+.bg-cyan { background-color: #00bcd4 !important; }
+.text-cyan { color: #00bcd4 !important; }
+.bg-aquamarine { background-color: #7fffd4 !important; }
