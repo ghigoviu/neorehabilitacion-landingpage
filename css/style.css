@@ -1179,8 +1179,8 @@ input.Enter_text::placeholder {
 }
 
 /* Colores de marca por si no están definidos globalmente en esta hoja */
-.bg-cyan { background-color: #15E4D0 !important; }
-.text-cyan { color: #00bcd4 !important; }
+.text-cyan { color: #D1EEF0 !important; }
+.text-turquoise { color: #25666B !important; }
 .bg-aquamarine { background-color: #15E4D0 !important; }
 .border-aquamarine { border: 2px solid #7fffd4 !important; }
 
@@ -1241,13 +1241,15 @@ input.Enter_text::placeholder {
 }
 
 /* Paleta de colores NEOrehabilitación */
-.text-cyan {
-    color: #00bcd4 !important;
-}
 
 .bg-cyan-light {
-    background-color: #d0eef0;
+    background-color: #D1EEF0;
     color: #007c8d;
+}
+
+.bg-verde-agua {
+    background-color: #15E4D0;
+    color: #ffffff;
 }
 
 /* Ajustes de Tarjetas */
@@ -1316,7 +1318,4 @@ h3.card-title {
     margin: 1.5rem 0;
 }
 
-/* Colores de marca */
-.bg-cyan { background-color: #00bcd4 !important; }
-.text-cyan { color: #00bcd4 !important; }
-.bg-aquamarine { background-color: #7fffd4 !important; }
+.bg-aquamarine { background-color: #D1EEF0 !important; }
