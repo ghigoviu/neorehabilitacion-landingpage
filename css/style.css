@@ -681,6 +681,23 @@ button {
     margin-top: 50px;
 }
 
+.getquote_bt_mt0 {
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.getquote_bt_mt0 a {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #252525;
+    padding: 7px 0px;
+    text-align: center;
+}
+
 .getquote_bt a:hover {
     background-color: aliceblue;
     color: #252525;
